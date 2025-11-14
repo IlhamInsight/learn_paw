@@ -11,8 +11,8 @@
 
 body {
   font-family: "poppins", sans-serif;
-  background-color: #010817;
 }
+
 
 .site-header {
   display: flex;
@@ -76,58 +76,96 @@ body {
 }
 
 .header-logo .text-logo {
-  color: white;
+  color: black;
+  line-height: 1;
 }
 
 .header-logo .inklusi {
   font-size: 35px;
+  border-top: 3px solid black;
 }
 
 .header-logo .nirwana {
   font-weight: bold;
   font-size: 20px;
+  border-bottom: 3px solid black;
 }
 
 /* konten login */
-.container-log {
-  width: 100%;
-  display: flex;
-  justify-content: center;
+.konten {
+  max-width: 900px;
 }
 
-.card {
+.container-reg {
+  max-width: 450px;
+}
+.konten, .container-reg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 45px auto;
   background: white;
-  margin: 50px;
+  padding: 0;
+  border-radius: 8px;
+  box-shadow: 20px 20px 20px rgb(0, 0, 0, 0.25);
+}
+
+.konten .foto_school {
+  flex: 1;
+}
+
+.konten .foto_school img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+  display: block;
+}
+.container-log, .container-reg {
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.card-log, .card-reg {
+  background: white;
   width: 400px;
-  padding: 30px 60px;
-  border-radius: 50px;
+  padding: 40px 50px;
   text-align: center;
 }
 
-.container-log .profil img {
+.container-log .profil img,
+.container-reg .profil img {
   width: 100px;
   margin-bottom: 20px;
 }
 
-.container-log form {
+.container-log form,
+,.container-reg form {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  text-align: start;
 }
 
-.container-log label {
+.container-log label,
+.container-reg label {
   font-size: 20px;
+  text-align: start;
 }
 
 .container-log .email,
 .container-log .pass,
-.container-log .username {
+.container-log .username,
+.container-reg .email,
+.container-reg .pass,
+.container-reg .username {
   display: flex;
   flex-direction: column;
 }
 
-.container-log input {
+.container-log input,
+.container-reg input {
   border-radius: 5px;
   border: 1px solid black;
   font-size: 14px;
@@ -136,7 +174,8 @@ body {
   margin-bottom: 15px;
 }
 
-.container-log .button a {
+.container-log .button a,
+.container-reg .button a {
   text-decoration: none;
   padding: 5px 50px;
   border: 1px solid black;
@@ -145,12 +184,13 @@ body {
   background: #3b82f6;
 }
 
-.container-log .register,
-.container-log .button {
-  text-align: center;
+.container-log .button,
+.container-reg .button {
+  padding: 15px;
 }
 
-.container-log a {
+.container-log a,
+.container-reg a {
   text-decoration: none;
 }
 
@@ -160,5 +200,5 @@ body {
   text-align: center;
   font-size: 13px;
   padding: 25px;
-  border-top: solid 1px white;
+  border-top: solid 1px black;
 }

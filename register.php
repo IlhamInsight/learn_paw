@@ -1,21 +1,10 @@
 <?php
-    include_once 'components/tag_html.php'
+    include_once 'components/tag_html.php';
+    include_once 'components/logo.php';
 ?>
 
-<div class="header-logo">
-    <div class="img">
-        <img src="logo.png" alt="">
-    </div>
-
-    <div class="text-logo">
-        <h2 class="inklusi">PPDB INKLUSI</h2>
-        <p class="nirwana">SEKOLAH NIRWANA</p>
-    </div>
-</div>
-
-
-<div class="container-log">
-    <div class="card">
+<div class="container-reg">
+    <div class="card-reg">
         <div class="profil">
             <img src="assets/images/profil-black.png" alt="">
         </div>
@@ -39,7 +28,7 @@
             <div class="button">
                 <a href="#">Register</a>
             </div>
-            <a href="login.php" class="register">Sudah Punya Akun?</a>
+            <a href="index.php" class="register">Sudah Punya Akun?</a>
         </form>
     </div>
 </div>
