@@ -1,0 +1,164 @@
+@font-face {
+  font-family: "poppins";
+  src: url("../font/Poppins-Regular.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #010817;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #010817;
+  border-bottom: 1px solid white;
+}
+
+.site-header .header_2 ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+
+.site-header .header_1 img {
+  width: 70px;
+  margin: 10px 0 10px 70px;
+}
+
+.header_3 {
+  margin: 40px 70px 0 0;
+}
+
+.header_3 a {
+  text-decoration: none;
+  padding: 5px 30px;
+  border: 1px solid black;
+  border-radius: 6px;
+  background: #3b82f6;
+}
+
+.header_2 {
+  padding-top: 35px;
+}
+
+.header_2 ul a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.header_2 a:hover {
+  color: #3b82f6;
+  border-bottom: solid 2px #3b82f6;
+}
+
+.site-main {
+  height: 570px;
+}
+
+.header-logo {
+  display: flex;
+  padding: 20px 50px;
+  gap: 10px;
+  align-items: center;
+}
+
+.header-logo .img img {
+  width: 75px;
+}
+
+.header-logo .text-logo {
+  color: white;
+}
+
+.header-logo .inklusi {
+  font-size: 35px;
+}
+
+.header-logo .nirwana {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+/* konten login */
+.container-log {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  background: white;
+  margin: 50px;
+  width: 400px;
+  padding: 30px 60px;
+  border-radius: 50px;
+  text-align: center;
+}
+
+.container-log .profil img {
+  width: 100px;
+  margin-bottom: 20px;
+}
+
+.container-log form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: start;
+}
+
+.container-log label {
+  font-size: 20px;
+}
+
+.container-log .email,
+.container-log .pass,
+.container-log .username {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-log input {
+  border-radius: 5px;
+  border: 1px solid black;
+  font-size: 14px;
+  height: 35px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.container-log .button a {
+  text-decoration: none;
+  padding: 5px 50px;
+  border: 1px solid black;
+  border-radius: 6px;
+  color: black;
+  background: #3b82f6;
+}
+
+.container-log .register,
+.container-log .button {
+  text-align: center;
+}
+
+.container-log a {
+  text-decoration: none;
+}
+
+/* footer */
+.site-footer p {
+  color: #64748b;
+  text-align: center;
+  font-size: 13px;
+  padding: 25px;
+  border-top: solid 1px white;
+}
