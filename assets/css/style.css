@@ -13,12 +13,12 @@ body {
   font-family: "poppins", sans-serif;
 }
 
+/* First Navbar */
 
 .site-header {
   display: flex;
   justify-content: space-between;
-  background-color: #010817;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid black;
 }
 
 .site-header .header_2 ul {
@@ -40,6 +40,7 @@ body {
   text-decoration: none;
   padding: 5px 30px;
   border: 1px solid black;
+  color: black;
   border-radius: 6px;
   background: #3b82f6;
 }
@@ -50,7 +51,7 @@ body {
 
 .header_2 ul a {
   font-weight: bold;
-  color: white;
+  color: black;
   text-decoration: none;
   font-size: 20px;
 }
@@ -66,7 +67,7 @@ body {
 
 .header-logo {
   display: flex;
-  padding: 20px 50px;
+  padding: 10px 50px;
   gap: 10px;
   align-items: center;
 }
@@ -91,15 +92,18 @@ body {
   border-bottom: 3px solid black;
 }
 
-/* konten login */
-.konten {
+/* last navbar */
+
+/* First konten login & register */
+.konten-log {
   max-width: 900px;
 }
 
 .container-reg {
   max-width: 450px;
 }
-.konten, .container-reg {
+.konten-log,
+.container-reg {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -111,24 +115,26 @@ body {
   box-shadow: 20px 20px 20px rgb(0, 0, 0, 0.25);
 }
 
-.konten .foto_school {
+.konten-log .foto_school-log {
   flex: 1;
 }
 
-.konten .foto_school img {
+.konten-log .foto_school-log img {
   width: 100%;
   height: 100%;
   border-radius: 8px;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
-.container-log, .container-reg {
+.container-log,
+.container-reg {
   display: flex;
   justify-content: center;
   flex: 1;
 }
 
-.card-log, .card-reg {
+.card-log,
+.card-reg {
   background: white;
   width: 400px;
   padding: 40px 50px;
@@ -141,8 +147,13 @@ body {
   margin-bottom: 20px;
 }
 
+.container-log {
+  border-right: 2px solid black;
+}
+
 .container-log form,
-,.container-reg form {
+,
+.container-reg form {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -193,6 +204,18 @@ body {
 .container-reg a {
   text-decoration: none;
 }
+
+/* Last konten login & register */
+
+/* First konten beranda */
+
+.konten-beranda {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Last Konten beranda */
+
 
 /* footer */
 .site-footer p {

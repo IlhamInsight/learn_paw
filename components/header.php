@@ -1,9 +1,10 @@
 
     <!-- header -->
     <header class="site-header">
-        <div class="header_1">
-            <img src="assets/images/logo.png" alt="">
-        </div>
+
+        <?php
+        include_once 'logo.php';
+        ?>
 
         <div class="header_2">
             <ul>

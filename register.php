@@ -8,7 +8,7 @@
         <div class="profil">
             <img src="assets/images/profil-black.png" alt="">
         </div>
-        <form action="post" class="login">
+        <form action="#" class="login" method="post">
             <div class="username">
                 <label for="user">Username *</label>
                 <input type="text" name="user" id="user">

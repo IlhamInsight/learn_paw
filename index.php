@@ -4,14 +4,13 @@
 ?>
 
 
-
-<div class="konten">
+<div class="konten-log">
     <div class="container-log">
         <div class="card-log">
             <div class="profil">
                 <img src="assets/images/profil-black.png" alt="">
             </div>
-            <form action="post" class="login">
+            <form action="#" class="login" method="post">
                 <div class="email">
                     <label for="email">Email *</label>
                     <input type="text" name="email" id="email">
@@ -30,7 +29,7 @@
             </form>
         </div>
     </div>
-    <div class="foto_school">
+    <div class="foto_school-log">
         <img src="assets/images/bg_sekolah_1.png" alt="">
     </div>
 </div>
