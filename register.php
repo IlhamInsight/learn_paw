@@ -8,28 +8,26 @@
         <div class="profil">
             <img src="assets/images/profil-black.png" alt="">
         </div>
-        <form action="#" class="login" method="post">
-            <div class="username">
-                <label for="user">Username *</label>
-                <input type="text" name="user" id="user">
-            </div>    
+        <?php 
+        $errors = [];
+            if ($_SERVER['REQUEST_METHOD']=='POST') {
+                require 'database.php';
+                validateUsername($errors, $_POST, 'user');
+                validateEmail($errors, $_POST, 'email');
+                validatePassword($errors, $_POST, 'password');
+                cekDuplikasi($errors,$DBH,'PROFIL_SISWA', 'USER_SISWA', $_POST['user'], 'usernames', '*Username sudah terpakai.');
+                cekDuplikasi($errors,$DBH,'PROFIL_SISWA', 'EMAIL_SISWA', $_POST['email'], 'emails', '*Email sudah terpakai.');
 
-            <div class="email">
-                <label for="email">Email *</label>
-                <input type="text" name="email" id="email">
-            </div>
-
-            <div class="pass">
-                <label for="password">Password *</label>
-                <input type="password" name="password" id="password">
-            </div>
-
-            <!-- <button class="btn-login">REGISTER</button> -->
-            <div class="button">
-                <a href="#">Register</a>
-            </div>
-            <a href="index.php" class="register">Sudah Punya Akun?</a>
-        </form>
+                if ($errors) {
+                    include 'form/form_register.php';
+                } else {
+                    require 'proses/register_proses.php';
+                }
+            } else {
+                include 'form/form_register.php';
+            }
+        
+         ?>
     </div>
 </div>
 

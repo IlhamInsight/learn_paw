@@ -225,3 +225,10 @@ body {
   padding: 25px;
   border-top: solid 1px black;
 }
+
+/* EROR */
+.erorr {
+  color: red;
+  font-size: 11px;
+  text-align: left;
+}

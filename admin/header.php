@@ -3,7 +3,7 @@
     <header class="site-header">
 
         <?php
-        include_once 'logo.php';
+        include_once '../components/logo.php';
         ?>
 
         <div class="header_2">
@@ -16,6 +16,6 @@
         </div>
 
         <div class="header_3">
-            <a href="proses/logout_proses.php">Logout</a>
+            <a href="../proses/logout_proses.php">Logout</a>
         </div>
     </header>

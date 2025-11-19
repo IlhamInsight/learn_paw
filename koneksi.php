@@ -1,4 +1,12 @@
 <?php
+define('BASE_URL', 'http://localhost/PAW/learn_paw/');
+// --- Tambahkan 2 baris ini sementara untuk melihat errornya ---
+ini_set('display_errors', 1);
+error_reporting(E_ALL);
+// -------------------------------------------------------------
+
+$host = 'localhost';
+// ... kodingan koneksi Anda ...
 $db_host = 'localhost';
 $db_name = 'ppdb';
 $db_user = 'root';

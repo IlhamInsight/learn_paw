@@ -1,6 +1,6 @@
 <?php
-    include_once 'components/tag_html.php';
-    include_once 'components/logo.php';
+include_once 'components/tag_html.php';
+include_once 'components/logo.php';
 ?>
 
 
@@ -10,23 +10,23 @@
             <div class="profil">
                 <img src="assets/images/profil-black.png" alt="">
             </div>
-            <form action="#" class="login" method="post">
-                <div class="email">
-                    <label for="email">Email *</label>
-                    <input type="text" name="email" id="email">
-                </div>
+            <?php 
+            $errors = [];
+            if ($_SERVER['REQUEST_METHOD']=='POST') {
+                require 'database.php';
+                validateEmail($errors, $_POST, 'email');
+                validatePassword($errors, $_POST, 'password');
+                cekLogin($errors, $DBH, $_POST['email'], $_POST['password']);
 
-                <div class="pass">
-                    <label for="password">Password *</label>
-                    <input type="password" name="password" id="password">
-                </div>
-
-                <!-- <button class="btn-login">LOGIN</button> -->
-                <div class="button">
-                    <a href="#" class="login">Login</a>
-                </div>
-                <a href="register.php" class="register">Belum Punya Akun?</a>
-            </form>
+                if ($errors) {
+                    include 'form/form_login.php';
+                } else {
+                    require 'proses/login_proses.php';
+                }
+            } else {
+                include 'form/form_login.php';
+            }
+            ?>
         </div>
     </div>
     <div class="foto_school-log">
@@ -35,5 +35,5 @@
 </div>
 
 <?php
-    include_once 'components/footer.php';
+include_once 'components/footer.php';
 ?>
