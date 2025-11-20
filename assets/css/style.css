@@ -117,7 +117,7 @@ body {
 .container-pendaftaran {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   border: 1px solid black;
   margin: 50px auto;
   background: white;
@@ -127,7 +127,8 @@ body {
 }
 
 .konten-log .foto_school-log {
-  flex: 1;
+  /*flex: 1;*/
+  width: 450px;
 }
 
 .konten-log .foto_school-log img {
@@ -141,7 +142,8 @@ body {
 .container-pendaftaran {
   display: flex;
   justify-content: center;
-  flex: 1;
+  /*flex: 1;*/
+  width: 450px;
 }
 
 .card-log,
@@ -149,7 +151,7 @@ body {
 .card-pendaftaran {
   background: white;
   width: 400px;
-  padding: 38px 50px;
+  padding: 38px 25px;
   text-align: center;
 }
 
@@ -159,9 +161,9 @@ body {
   margin-bottom: 20px;
 }
 
-.container-log {
+/*.container-log {
   border-right: 2px solid black;
-}
+}*/
 
 .container-log form,
 .container-reg form,
@@ -222,7 +224,7 @@ body {
 .container-reg .button button,
 .container-pendaftaran button {
   text-decoration: none;
-  padding: 5px 50px;
+  padding: 8px 50px;
   border: 1px solid black;
   border-radius: 6px;
   color: black;
@@ -263,9 +265,15 @@ body {
   line-height: 1.2;
 }
 
+.container-top .side-left h4 {
+  font-size: 25px;
+  padding-left: 20px;
+}
+
 .container-top .side-left p {
-  font-size: 18px;
-  margin: 15px 0;
+  padding-left: 35px;
+  font-size: 16px;
+  line-height: 1.5;
   color: #242B36;
 }
 
@@ -279,6 +287,8 @@ body {
   border-radius: 50px;
   border: 1px solid black;
   text-decoration: none;
+  display: inline-block;
+  margin-top: 20px;
   color: black;
   box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.25);
 }
@@ -321,11 +331,20 @@ body {
   overflow: hidden;
   box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.3);
   transition: all 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
 }
 
 .konten-beranda .box_1:hover {
   transform: translateY(-8px);
   box-shadow: 7px 15px 25px rgb(0, 0, 0, 0.35);
+}
+
+.konten-beranda .box_1 .body-box {
+  height: auto;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .konten-beranda .box_1 h3,
@@ -345,7 +364,13 @@ body {
 
 .konten-beranda .box_1 p {
   color: #B3A795;
-  margin-bottom: 55px;
+  margin-bottom: 10px;
+}
+
+.konten-beranda .box_1 a {
+  padding: 35px;
+  display: block;
+  margin-top: auto;
 }
 
 .konten-beranda .image-box img {
@@ -409,7 +434,7 @@ body {
 /* beranda admin */
 .konten-admin {
   max-width: 1500px;
-  margin: 50px auto;
+  margin: 20px auto;
   display: grid;
   gap: 30px;
 }
@@ -483,7 +508,7 @@ body {
 }
 
 .konten-admin .button-jurusan button {
-  padding: 8px 120px;
+  padding: 10px 120px;
   border-radius: 10px;
   background: #3b82f6;
   font-weight: bold;
@@ -526,12 +551,16 @@ body {
 .konten-admin .btn-aksi {
   display: flex;
   gap: 10px;
-  width: 150px;
+}
+
+.konten-admin .btn-aksi .edit {
+  margin-bottom: 10px;
 }
 
 .konten-admin .btn-aksi button {
   flex: 1;
-  padding: 5px 0;
+  width: 100px;
+  padding: 5px 20px;
   border-radius: 5px;
 }
 
@@ -545,6 +574,8 @@ body {
 
 .konten-admin .tabel-siswa button {
   padding: 5px 57px;
+  background: #89CFF0;
+  border-radius: 5px;
 }
 
 /* footer */

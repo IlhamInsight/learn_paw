@@ -15,11 +15,6 @@ include_once '../components/logo.php';
             <a href="#" class="">Lihat Calon Siswa</a>
         </div>
 
-        <!-- <div class="status-siswa">
-            <h3>Status Pendaftaran Siswa</h3>
-            <a href="#" class="">Lihat Status Calon Siswa</a>
-        </div> -->
-
     </div>
 
     <div class="tambah-jurusan">
@@ -67,8 +62,10 @@ include_once '../components/logo.php';
                 <td>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt eaque eos, architecto, nesciunt consectetur quaerat cupiditate iste vitae nobis rem suscipit maiores corrupti, error? Vitae eum qui aspernatur officia saepe.</td>
                 <td>
                     <div class="btn-aksi">
-                        <button class="edit">Edit</button>
-                        <button class="delete">Delete</button>
+                        <form action="">
+                            <button class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </form>
                     </div>
                 </td>
             </tr>
