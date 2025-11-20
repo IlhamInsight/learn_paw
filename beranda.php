@@ -4,7 +4,7 @@ include_once 'components/header.php';
 ?>
 
     <!-- konten -->
-    <div class="konten-beranda">
+    <div class="konten-beranda" id="beranda">
         <div class="container-top">
             <div class="side-left">
                 <h1>Info Pendaftaran Sekolah <span class="higlight">Inklusi.</span></h1>
@@ -52,7 +52,7 @@ include_once 'components/header.php';
                 </div>
             </div>
             <div class="button-bot">
-                <a href="#">Lihat Semua Berita -></a>
+                <a href="https://www.detik.com/" target="blank">Lihat Semua Berita -></a>
             </div>
         </div>
 

@@ -3,7 +3,7 @@ include_once 'components/tag_html.php';
 include_once 'components/header.php';
 ?>
 
-<div class="konten-status">
+<div class="konten-status" id="status">
     <div class="container-status">
         <h1 class="judul-status">Riwayat & Status Pendaftaran</h1>
 

@@ -10,7 +10,7 @@
             <ul>
                 <li><a href="beranda.php">Beranda</a></li>
                 <li><a href="#">Profil</a></li>
-                <li><a href="#">Pendaftaran</a></li>
+                <li><a href="pendaftaran.php">Pendaftaran</a></li>
                 <li><a href="status.php">Status</a></li>
             </ul>
         </div>

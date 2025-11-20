@@ -1,9 +1,9 @@
 <?php
     include_once 'components/tag_html.php';
-    include_once 'components/logo.php';
+    include_once 'components/header.php';
 ?>
 
-<div class="konten-pendaftaran">
+<div class="konten-pendaftaran" id="pendaftaran">
     <div class="container-pendaftaran">
         <div class="card-pendaftaran">
             <div class="profil">
