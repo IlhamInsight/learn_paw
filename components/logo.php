@@ -1,6 +1,6 @@
 <div class="header-logo">
     <div class="img">
-        <img src="assets/images/logo.png" alt="">
+        <img src="/PAW2025-1-D06/assets/images/logo.png" alt="">
     </div>
 
     <div class="text-logo">

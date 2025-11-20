@@ -21,11 +21,11 @@
                     <input type="password" name="password" id="password">
                 </div>
 
-                <!-- <button class="btn-login">LOGIN</button> -->
                 <div class="button">
-                    <a href="#" class="login">Login</a>
+                    <button class="btn-login">Login</button>
+                    <!-- <a href="beranda.php" class="login">Login</a> -->
                 </div>
-                <a href="register.php" class="register">Belum Punya Akun?</a>
+                <a href="register.php" class="reg-href">Belum Punya Akun?</a>
             </form>
         </div>
     </div>
